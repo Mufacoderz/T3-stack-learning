@@ -1,0 +1,205 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  background-color: #222;
+  padding: 10px 40px;
+  border-bottom: 1px solid #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .header {
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #333;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #eee;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+body.dark-mode .theme-switcher {
+  background-color: #555;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  max-width: 960px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+main h1 {
+  color: #333;
+  text-align: center;
+  border-bottom: none;
+  font-size: 3em;
+}
+
+body.dark-mode main h1 {
+  color: #eee;
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: -10px;
+}
+
+body.dark-mode .subtitle {
+  color: #aaa;
+}
+
+/* Post List */
+.post-list .post-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+body.dark-mode .post-list .post-item {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.post-list .post-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-list .post-item h2 a {
+  color: #1a1a1a;
+  font-size: 1.5em;
+}
+
+body.dark-mode .post-list .post-item h2 a {
+  color: #eee;
+}
+
+.post-list .post-item p {
+  color: #666;
+}
+
+body.dark-mode .post-list .post-item p {
+  color: #aaa;
+}
+
+/* Post Detail */
+.post-detail {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+body.dark-mode .post-detail {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.post-detail .meta {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+body.dark-mode .post-detail .meta {
+  color: #aaa;
+}
+
+.post-detail .content {
+  margin-top: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa; /* Warna cerah untuk footer */
+  color: #333; /* Warna teks gelap */
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+}
+
+body.dark-mode .footer {
+  background-color: #1f1f1f;
+  color: #eee;
+  border-top: 1px solid #333;
+}
